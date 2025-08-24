@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #eaeaea;
+  margin-bottom: 40px;
+}
+
+/* Auth Forms Layout */
+.auth-forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 280px;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-head img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Form Elements */
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Divider */
+.divider {
+  font-weight: bold;
+  color: white;
+}
+
+/* Profile Page */
+.profile-container {
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 32px;
+  height: 32px;
+}
+
+#logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#logoutBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+#logoutBtn:hover {
+  background: #e60000;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+  background: rgba(0,0,0,0.5);
+} 
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3064/3064155.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Authentication System</h1>
+    <p class="subtitle">Create an account or log in to continue</p>
+
+    <div class="auth-forms">
+      <!-- Signup Card -->
+      <div class="card">
+        <div class="card-head">
+          <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Signup Icon" />
+          <h3>Signup</h3>
+        </div>
+        <form id="signupForm">
+          <input type="text" id="signupUsername" placeholder="Username" required>
+          <input type="email" id="signupEmail" placeholder="Email" required>
+          <input type="password" id="signupPassword" placeholder="Password" required>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+
+      <!-- OR divider -->
+      <div class="divider">OR</div>
+
+      <!-- Login Card -->
+      <div class="card">
+        <div class="card-head">
+          <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Login Icon" />
+          <h3>Login</h3>
+        </div>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Auth System · Secure & Simple</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
