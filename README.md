@@ -1,4 +1,4 @@
-# Auth System
+# Authentication System
 
 A simple authentication system with **Node.js backend** and **HTML/CSS/JS frontend**. 
 Users can **sign up, log in, and view their profile** after authentication. 
