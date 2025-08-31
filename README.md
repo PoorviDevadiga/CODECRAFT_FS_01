@@ -2,17 +2,17 @@
 
 A simple authentication system with **Node.js backend** and **HTML/CSS/JS frontend**. 
 Users can **sign up, log in, and view their profile** after authentication. 
-JWT (JSON Web Token) is used for secure login sessions.
+Passwords are securely stored with **bcrypt** and login sessions are handled using **JWT (JSON Web Token)**.
 
 ## 🚀 Features
 - User **Signup** and **Login**
 - **JWT-based Authentication**
 - Basic **Profile Page**
 - Frontend with HTML, CSS, JavaScript
-- Backend with Node.js + Express
+- Backend with Node.js + Express + MongoDB
 
 ## 📂 Project Structure 
-auth-system/ ├── backend/ # Node.js + Express API │ ├── server.js │ ├── routes/auth.js │ └── package.json │ └── frontend/ # HTML, CSS, JS Frontend ├── index.html ├── profile.html ├── style.css └── script.js
+auth-system/ ├── backend/ # Node.js + Express API │ ├── server.js │ ├── routes/auth.js │ ├── models/User.js │ ├── middleware/authMiddleware.js │ └── package.json └── frontend/ # HTML, CSS, JS Frontend ├── index.html ├── profile.html ├── style.css └── script.js
 
 ## 🛠️ Setup Instructions
 ### Backend
