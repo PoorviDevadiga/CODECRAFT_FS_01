@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Profile</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3064/3064198.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064198.png" />
+  <style>
+    /* small local styles so profile looks decent if style.css isn't loaded */
+    .profile-container { max-width: 900px; margin: 30px auto; background: rgba(255,255,255,0.06); padding: 20px; border-radius: 10px; }
+    .profile-header { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .user-info { display:flex; align-items:center; gap:12px; }
+    .user-info img { width:56px; height:56px; border-radius:50%; }
+    .logout-btn { background:#e63946; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; display:flex; align-items:center; gap:8px; }
+    .profile-content { margin-top:20px; }
+    .profile-field { font-size:1.1rem; margin:8px 0; color:#fff; }
+    body { background: linear-gradient(180deg,#2d2a2a 0%, #7c6b5a 100%); color: #fff; font-family: "Segoe UI", Roboto, Arial; }
+  </style>
 </head>
 <body>
   <div class="profile-container">
     <header class="profile-header">
       <div class="user-info">
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064198.png" alt="Profile Icon" />
-        <h2>Your Profile</h2>
+        <img id="avatar" src="https://cdn-icons-png.flaticon.com/512/3064/3064198.png" alt="avatar" />
+        <div>
+          <h1 id="displayName">Your Profile</h1>
+          <small id="displaySubtitle">Welcome back</small>
+        </div>
       </div>
-      <button id="logoutBtn">
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064192.png" alt="Logout Icon" />
-        Logout
-      </button>
+
+      <div>
+        <button id="logoutBtn" class="logout-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/3064/3064192.png" alt="logout" style="width:18px;height:18px;" />
+          Logout
+        </button>
+      </div>
     </header>
 
-    <div class="profile-content">
-      <h3>Welcome!</h3>
-      <p id="userEmail">Loading user info...</p>
-    </div>
+    <section class="profile-content">
+      <h2>Account Details</h2>
+      <p class="profile-field">Username: <strong id="displayUsername">Loading...</strong></p>
+      <p class="profile-field">Email: <strong id="displayEmail">Loading...</strong></p>
+      <p class="profile-field">User ID: <strong id="displayId">Loading...</strong></p>
+    </section>
   </div>
 
-  <script src="script.js"></script>
+  <!-- include profile JS -->
+  <script src="profile.js"></script>
 </body>
 </html> 
+ 
