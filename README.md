@@ -20,4 +20,7 @@ auth-system/ ├── backend/ # Node.js + Express API │ ├── server.js 
    ```bash
    cd backend
    npm install
-   node server.js 
+   node server.js
+### MongoDB 
+1. Database Name: `authDB`
+2. Collection Name: `users`
