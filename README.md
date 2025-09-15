@@ -12,7 +12,7 @@ Passwords are securely stored with **bcrypt** and login sessions are handled usi
 - Backend with Node.js + Express + MongoDB
 
 ## 📂 Project Structure 
-CODECRAFT_FS_01/ ├── backend/ # Node.js + Express API │ ├── server.js │ ├── routes/auth.js │ ├── models/User.js │ ├── middleware/authMiddleware.js │ └── package.json └── frontend/ # HTML, CSS, JS Frontend ├── index.html ├── profile.html ├── style.css └── script.js
+CODECRAFT_FS_01/ ├── backend/ # Node.js + Express API │ ├── server.js │ ├── routes/auth.js │ ├── models/User.js │ ├── middleware/authMiddleware.js │ └── package.json └── frontend/ # HTML, CSS, JS Frontend ├── index.html ├── profile.html ├── profile.js ├── style.css └── script.js
 
 ## 🛠️ Setup Instructions
 ### Backend
